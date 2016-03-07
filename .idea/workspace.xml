@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9004c06a-a9d6-4956-a3e6-c764872f2173" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Actividad2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Matriz.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/SumaThread.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/anexo_2_6_1.ods" afterPath="$PROJECT_DIR$/docs/anexo_2_6_1.ods" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Actividad2/Actividad2.class" afterPath="$PROJECT_DIR$/out/production/Actividad2/Actividad2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html/classActividad2.html" afterPath="$PROJECT_DIR$/docs/html/classActividad2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html/classMatriz-members.html" afterPath="$PROJECT_DIR$/docs/html/classMatriz-members.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html/classMatriz.html" afterPath="$PROJECT_DIR$/docs/html/classMatriz.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html/classSumaFilaThread-members.html" afterPath="$PROJECT_DIR$/docs/html/classSumaFilaThread-members.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html/classSumaFilaThread.html" afterPath="$PROJECT_DIR$/docs/html/classSumaFilaThread.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html/classSumaThreads-members.html" afterPath="$PROJECT_DIR$/docs/html/classSumaThreads-members.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html/classSumaThreads.html" afterPath="$PROJECT_DIR$/docs/html/classSumaThreads.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html/functions.html" afterPath="$PROJECT_DIR$/docs/html/functions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html/functions_func.html" afterPath="$PROJECT_DIR$/docs/html/functions_func.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html/search/all_1.js" afterPath="$PROJECT_DIR$/docs/html/search/all_1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html/search/all_4.js" afterPath="$PROJECT_DIR$/docs/html/search/all_4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html/search/functions_1.js" afterPath="$PROJECT_DIR$/docs/html/search/functions_1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/html/search/functions_4.js" afterPath="$PROJECT_DIR$/docs/html/search/functions_4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/latex/classActividad2.tex" afterPath="$PROJECT_DIR$/docs/latex/classActividad2.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/latex/classMatriz.tex" afterPath="$PROJECT_DIR$/docs/latex/classMatriz.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/latex/classSumaFilaThread.tex" afterPath="$PROJECT_DIR$/docs/latex/classSumaFilaThread.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/latex/classSumaThreads.tex" afterPath="$PROJECT_DIR$/docs/latex/classSumaThreads.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/latex/refman.tex" afterPath="$PROJECT_DIR$/docs/latex/refman.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Actividad2.java" afterPath="$PROJECT_DIR$/src/Actividad2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SumaFilaThread.java" afterPath="$PROJECT_DIR$/src/SumaFilaThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SumaThreads.java" afterPath="$PROJECT_DIR$/src/SumaThreads.java" />
     </list>
     <ignored path="Actividad2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -445,10 +420,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27333334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18270008" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18270008" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
