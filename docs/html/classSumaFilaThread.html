@@ -103,35 +103,42 @@ Inheritance diagram for SumaFilaThread:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a08b98e8d93693ed9f256529ab12af18f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSumaFilaThread.html#a08b98e8d93693ed9f256529ab12af18f">SumaFilaThread</a> (int[] fila1, int[] fila2)</td></tr>
-<tr class="separator:a08b98e8d93693ed9f256529ab12af18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7a9f1cd3147750ba93322f6642743d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSumaFilaThread.html#aad7a9f1cd3147750ba93322f6642743d">SumaFilaThread</a> (int[][] filas1, int[][] filas2, int dimension)</td></tr>
+<tr class="memdesc:aad7a9f1cd3147750ba93322f6642743d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor con las filas de ambas matrices y la dimensión.  <a href="#aad7a9f1cd3147750ba93322f6642743d">More...</a><br/></td></tr>
+<tr class="separator:aad7a9f1cd3147750ba93322f6642743d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8fa946cd44e708f69cd98b3ec4c824e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSumaFilaThread.html#ad8fa946cd44e708f69cd98b3ec4c824e">run</a> ()</td></tr>
 <tr class="memdesc:ad8fa946cd44e708f69cd98b3ec4c824e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza la suma de una fila de dos matrices y guarda el resultado.  <a href="#ad8fa946cd44e708f69cd98b3ec4c824e">More...</a><br/></td></tr>
 <tr class="separator:ad8fa946cd44e708f69cd98b3ec4c824e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a2181a1a49bd2ef1169e3467b670e9f"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSumaFilaThread.html#a6a2181a1a49bd2ef1169e3467b670e9f">getResultado</a> ()</td></tr>
-<tr class="memdesc:a6a2181a1a49bd2ef1169e3467b670e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el resultado de la suma realizada en el método <a class="el" href="classSumaFilaThread.html#ad8fa946cd44e708f69cd98b3ec4c824e" title="Realiza la suma de una fila de dos matrices y guarda el resultado. ">run()</a>  <a href="#a6a2181a1a49bd2ef1169e3467b670e9f">More...</a><br/></td></tr>
-<tr class="separator:a6a2181a1a49bd2ef1169e3467b670e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2e595cc56767d6beecbecc84781651"><td class="memItemLeft" align="right" valign="top">int[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSumaFilaThread.html#aff2e595cc56767d6beecbecc84781651">getResultado</a> ()</td></tr>
+<tr class="memdesc:aff2e595cc56767d6beecbecc84781651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el resultado de la suma realizada en el método <a class="el" href="classSumaFilaThread.html#ad8fa946cd44e708f69cd98b3ec4c824e" title="Realiza la suma de una fila de dos matrices y guarda el resultado. ">run()</a>  <a href="#aff2e595cc56767d6beecbecc84781651">More...</a><br/></td></tr>
+<tr class="separator:aff2e595cc56767d6beecbecc84781651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Clase que se encarga de sumar una fila de dos matrices distintas. </p>
 <p>Cada objeto de esta clase se ejecuta en un único hilo. </p>
 <dl class="section author"><dt>Author</dt><dd>Martín y Víctor. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a08b98e8d93693ed9f256529ab12af18f"></a>
+<a class="anchor" id="aad7a9f1cd3147750ba93322f6642743d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">SumaFilaThread.SumaFilaThread </td>
           <td>(</td>
-          <td class="paramtype">int[]&#160;</td>
-          <td class="paramname"><em>fila1</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>filas1</em>[][], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int[]&#160;</td>
-          <td class="paramname"><em>fila2</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>filas2</em>[][], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dimension</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -141,15 +148,25 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor con las filas de ambas matrices y la dimensión. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filas1</td><td>Filas de la matriz1 </td></tr>
+    <tr><td class="paramname">filas2</td><td>Filas de la matriz2 </td></tr>
+    <tr><td class="paramname">dimension</td><td>Dimensión de las matrices </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6a2181a1a49bd2ef1169e3467b670e9f"></a>
+<a class="anchor" id="aff2e595cc56767d6beecbecc84781651"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int [] SumaFilaThread.getResultado </td>
+          <td class="memname">int [][] SumaFilaThread.getResultado </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -158,7 +175,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Devuelve el resultado de la suma realizada en el método <a class="el" href="classSumaFilaThread.html#ad8fa946cd44e708f69cd98b3ec4c824e" title="Realiza la suma de una fila de dos matrices y guarda el resultado. ">run()</a> </p>
-<dl class="section return"><dt>Returns</dt><dd>La fila resultado </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Las filas resultado </dd></dl>
 
 </div>
 </div>

@@ -15,13 +15,10 @@ Inheritance diagram for Suma\-Threads\-:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\hyperlink{classSumaThreads_a916580477ee278dc5785b878f0be789a}{Suma\-Threads} (int n\-Threads)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Constructor que recibe el número hilos. \end{DoxyCompactList}\item 
 \hyperlink{classMatriz}{Matriz} \hyperlink{classSumaThreads_ac799c145a2711fff3ac9b348c8afd881}{get\-Suma} (\hyperlink{classMatriz}{Matriz} m1, \hyperlink{classMatriz}{Matriz} m2)  throws Exception 
 \begin{DoxyCompactList}\small\item\em Obtiene la matriz que es suma de dos matrices. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Static Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-static \hyperlink{classSumaThreads}{Suma\-Threads} \hyperlink{classSumaThreads_ad9b2e7b96e26eee35c767df5f7c11dec}{get\-Instance} ()
-\begin{DoxyCompactList}\small\item\em Devuelve la instancia para implementar el patrón \char`\"{}\-Singleton\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -32,21 +29,31 @@ Víctor y Martín
 \end{DoxyAuthor}
 
 
-\subsection{Member Function Documentation}
-\hypertarget{classSumaThreads_ad9b2e7b96e26eee35c767df5f7c11dec}{\index{Suma\-Threads@{Suma\-Threads}!get\-Instance@{get\-Instance}}
-\index{get\-Instance@{get\-Instance}!SumaThreads@{Suma\-Threads}}
-\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Suma\-Threads} Suma\-Threads.\-get\-Instance (
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSumaThreads_a916580477ee278dc5785b878f0be789a}{\index{Suma\-Threads@{Suma\-Threads}!Suma\-Threads@{Suma\-Threads}}
+\index{Suma\-Threads@{Suma\-Threads}!SumaThreads@{Suma\-Threads}}
+\subsubsection[{Suma\-Threads}]{\setlength{\rightskip}{0pt plus 5cm}Suma\-Threads.\-Suma\-Threads (
 \begin{DoxyParamCaption}
-{}
+\item[{int}]{n\-Threads}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}}\label{classSumaThreads_ad9b2e7b96e26eee35c767df5f7c11dec}
+) throws Exception}}\label{classSumaThreads_a916580477ee278dc5785b878f0be789a}
 
 
-Devuelve la instancia para implementar el patrón \char`\"{}\-Singleton\char`\"{}. 
+Constructor que recibe el número hilos. 
 
-\begin{DoxyReturn}{Returns}
-La única instancia permitida de la \hyperlink{classSumaThreads}{Suma\-Threads} 
-\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em n\-Threads} & Número de hilos para resolver la suma \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & que se produce cuando el número hilos es negativo o 0 \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
 \hypertarget{classSumaThreads_ac799c145a2711fff3ac9b348c8afd881}{\index{Suma\-Threads@{Suma\-Threads}!get\-Suma@{get\-Suma}}
 \index{get\-Suma@{get\-Suma}!SumaThreads@{Suma\-Threads}}
 \subsubsection[{get\-Suma}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matriz} Suma\-Threads.\-get\-Suma (

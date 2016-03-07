@@ -106,12 +106,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aff57f6720c62264098b013f66960508f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMatriz.html#aff57f6720c62264098b013f66960508f">getValor</a> (int fila, int columna)</td></tr>
 <tr class="memdesc:aff57f6720c62264098b013f66960508f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el valor de una celda de la matriz.  <a href="#aff57f6720c62264098b013f66960508f">More...</a><br/></td></tr>
 <tr class="separator:aff57f6720c62264098b013f66960508f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8e0eddd894e306a71a4911617f3c339"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMatriz.html#ac8e0eddd894e306a71a4911617f3c339">getFila</a> (int i)</td></tr>
-<tr class="memdesc:ac8e0eddd894e306a71a4911617f3c339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve una fila.  <a href="#ac8e0eddd894e306a71a4911617f3c339">More...</a><br/></td></tr>
-<tr class="separator:ac8e0eddd894e306a71a4911617f3c339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add9623784073c059fe9a531e8423c90e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMatriz.html#add9623784073c059fe9a531e8423c90e">setFila</a> (int i, int[] fila)</td></tr>
-<tr class="memdesc:add9623784073c059fe9a531e8423c90e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualiza el valor de una fila.  <a href="#add9623784073c059fe9a531e8423c90e">More...</a><br/></td></tr>
-<tr class="separator:add9623784073c059fe9a531e8423c90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39eb808f24e4800ffa1ff55925a4fb8"><td class="memItemLeft" align="right" valign="top">int[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMatriz.html#af39eb808f24e4800ffa1ff55925a4fb8">getFilas</a> (int i, int f)</td></tr>
+<tr class="memdesc:af39eb808f24e4800ffa1ff55925a4fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve un conjunto de filas de una matriz.  <a href="#af39eb808f24e4800ffa1ff55925a4fb8">More...</a><br/></td></tr>
+<tr class="separator:af39eb808f24e4800ffa1ff55925a4fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9734934460836b625f8d5a5c7366f2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMatriz.html#ac9734934460836b625f8d5a5c7366f2f">setFilas</a> (int i, int f, int[][] filas)</td></tr>
+<tr class="separator:ac9734934460836b625f8d5a5c7366f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7372f0c680fb3f3fd36a1135ce920e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMatriz.html#ab7372f0c680fb3f3fd36a1135ce920e9">setValor</a> (int fila, int columna, int valor)</td></tr>
 <tr class="memdesc:ab7372f0c680fb3f3fd36a1135ce920e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualiza el valor de una celda.  <a href="#ab7372f0c680fb3f3fd36a1135ce920e9">More...</a><br/></td></tr>
 <tr class="separator:ab7372f0c680fb3f3fd36a1135ce920e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,28 +156,39 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac8e0eddd894e306a71a4911617f3c339"></a>
+<a class="anchor" id="af39eb808f24e4800ffa1ff55925a4fb8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int [] Matriz.getFila </td>
+          <td class="memname">int [][] Matriz.getFilas </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Devuelve una fila. </p>
+<p>Devuelve un conjunto de filas de una matriz. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">i</td><td>La fila </td></tr>
+    <tr><td class="paramname">i</td><td>La fila de inicio </td></tr>
+    <tr><td class="paramname">f</td><td>La fila de fin </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Un vector de enteros que representa una fila </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Un array con f - i filas y la dimensión de la matriz columnas </dd></dl>
 
 </div>
 </div>
@@ -236,12 +246,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="add9623784073c059fe9a531e8423c90e"></a>
+<a class="anchor" id="ac9734934460836b625f8d5a5c7366f2f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Matriz.setFila </td>
+          <td class="memname">void Matriz.setFilas </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>i</em>, </td>
@@ -249,8 +259,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int[]&#160;</td>
-          <td class="paramname"><em>fila</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>filas</em>[][]&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -259,15 +275,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Actualiza el valor de una fila. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td>La fila </td></tr>
-    <tr><td class="paramname">fila</td><td>Un vector de enteros que representa una fila </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

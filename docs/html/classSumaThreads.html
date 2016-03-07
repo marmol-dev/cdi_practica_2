@@ -84,7 +84,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classSumaThreads-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SumaThreads Class Reference</div>  </div>
@@ -105,46 +104,48 @@ Inheritance diagram for SumaThreads:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a916580477ee278dc5785b878f0be789a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSumaThreads.html#a916580477ee278dc5785b878f0be789a">SumaThreads</a> (int nThreads)  throws Exception </td></tr>
+<tr class="memdesc:a916580477ee278dc5785b878f0be789a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor que recibe el número hilos.  <a href="#a916580477ee278dc5785b878f0be789a">More...</a><br/></td></tr>
+<tr class="separator:a916580477ee278dc5785b878f0be789a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac799c145a2711fff3ac9b348c8afd881"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatriz.html">Matriz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSumaThreads.html#ac799c145a2711fff3ac9b348c8afd881">getSuma</a> (<a class="el" href="classMatriz.html">Matriz</a> m1, <a class="el" href="classMatriz.html">Matriz</a> m2)  throws Exception </td></tr>
 <tr class="memdesc:ac799c145a2711fff3ac9b348c8afd881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene la matriz que es suma de dos matrices.  <a href="#ac799c145a2711fff3ac9b348c8afd881">More...</a><br/></td></tr>
 <tr class="separator:ac799c145a2711fff3ac9b348c8afd881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad9b2e7b96e26eee35c767df5f7c11dec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSumaThreads.html">SumaThreads</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSumaThreads.html#ad9b2e7b96e26eee35c767df5f7c11dec">getInstance</a> ()</td></tr>
-<tr class="memdesc:ad9b2e7b96e26eee35c767df5f7c11dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve la instancia para implementar el patrón "Singleton".  <a href="#ad9b2e7b96e26eee35c767df5f7c11dec">More...</a><br/></td></tr>
-<tr class="separator:ad9b2e7b96e26eee35c767df5f7c11dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Clase que implementa la suma de dos matrices utilizando hilos. </p>
 <dl class="section author"><dt>Author</dt><dd>Víctor y Martín </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad9b2e7b96e26eee35c767df5f7c11dec"></a>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a916580477ee278dc5785b878f0be789a"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classSumaThreads.html">SumaThreads</a> SumaThreads.getInstance </td>
+          <td class="memname">SumaThreads.SumaThreads </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nThreads</em></td><td>)</td>
+          <td> throws Exception</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Devuelve la instancia para implementar el patrón "Singleton". </p>
-<dl class="section return"><dt>Returns</dt><dd>La única instancia permitida de la <a class="el" href="classSumaThreads.html" title="Clase que implementa la suma de dos matrices utilizando hilos. ">SumaThreads</a> </dd></dl>
+<p>Constructor que recibe el número hilos. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nThreads</td><td>Número de hilos para resolver la suma </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>que se produce cuando el número hilos es negativo o 0 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac799c145a2711fff3ac9b348c8afd881"></a>
 <div class="memitem">
 <div class="memproto">

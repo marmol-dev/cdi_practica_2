@@ -13,16 +13,12 @@ public class SumaThreads implements SumaMatrices {
 	private Matriz resultado = null;
 	private int nThreads;
 
-	/**
-	 * Devuelve la instancia para implementar el patrón "Singleton"
-	 * @param nThreads el número de threads a usar
-	 * @return La única instancia permitida de la SumaThreads
-     */
-	public static SumaThreads getInstance(int nThreads) throws Exception {
-		if(instance == null) instance = new SumaThreads(nThreads);
-		return instance;
-	}
 
+	/**
+	 * Constructor que recibe el número hilos
+	 * @param nThreads Número de hilos para resolver la suma
+	 * @throws Exception que se produce cuando el número hilos es negativo o 0
+     */
 	public SumaThreads(int nThreads) throws Exception {
 		if (nThreads < 1){
 			throw new Exception("Invalid number of threads");
@@ -30,6 +26,11 @@ public class SumaThreads implements SumaMatrices {
 		this.nThreads = nThreads;
 	}
 
+	/**
+	 * Obtiene el número de filas que tiene que procesar cada thread
+	 * @param dimension La dimensión de la matriz
+	 * @return El número de filas por thread
+     */
 	private int getFilasPorThread(int dimension){
 		float filasPorThread = (float) (dimension / nThreads);
 
@@ -39,12 +40,25 @@ public class SumaThreads implements SumaMatrices {
 		return (int) filasPorThread;
 	}
 
+	/**
+	 * Obtiene la fila de inicio que tiene que procesar un thread
+	 * Si la fila de inicio es -1 significa que ese thread no tiene que procesar ninguna fila
+	 * @param nThread El thread al que le quiere calcular la fila que tiene que procesar
+	 * @param dimension La dimensión de la matriz
+     * @return La fila de inicio
+     */
 	private int getFilaInicio(int nThread, int dimension){
 		int toret = nThread* getFilasPorThread(dimension);
 		if (toret >= dimension) toret = -1;
 		return toret;
 	}
 
+	/**
+	 * Obtiene la fila de fin que tiene que procesar un thread (la fila de fin es la siguiente a la última)
+	 * @param nThread El thread al que se le quiere calcular la fila de fin
+	 * @param dimension La dimensión de la matriz
+     * @return La fila de fin
+     */
 	private int getFilaFin(int nThread, int dimension){
 		int filaFin, filaInicio = getFilaInicio(nThread, dimension);
 

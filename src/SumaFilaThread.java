@@ -8,6 +8,13 @@ public class SumaFilaThread implements Runnable{
     private int[][] filas2;
     private int[][] resultado = null;
     int dimension;
+
+    /**
+     * Constructor con las filas de ambas matrices y la dimensión
+     * @param filas1 Filas de la matriz1
+     * @param filas2 Filas de la matriz2
+     * @param dimension Dimensión de las matrices
+     */
     public SumaFilaThread(int[][] filas1, int[][] filas2, int dimension){
         this.filas1 = filas1;
         this.filas2 = filas2;

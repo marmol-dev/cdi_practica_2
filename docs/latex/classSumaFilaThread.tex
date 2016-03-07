@@ -15,11 +15,11 @@ Inheritance diagram for Suma\-Fila\-Thread\-:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classSumaFilaThread_a08b98e8d93693ed9f256529ab12af18f}{Suma\-Fila\-Thread} (int\mbox{[}$\,$\mbox{]} fila1, int\mbox{[}$\,$\mbox{]} fila2)
-\item 
+\hyperlink{classSumaFilaThread_aad7a9f1cd3147750ba93322f6642743d}{Suma\-Fila\-Thread} (int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} filas1, int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} filas2, int dimension)
+\begin{DoxyCompactList}\small\item\em Constructor con las filas de ambas matrices y la dimensión. \end{DoxyCompactList}\item 
 void \hyperlink{classSumaFilaThread_ad8fa946cd44e708f69cd98b3ec4c824e}{run} ()
 \begin{DoxyCompactList}\small\item\em Realiza la suma de una fila de dos matrices y guarda el resultado. \end{DoxyCompactList}\item 
-int\mbox{[}$\,$\mbox{]} \hyperlink{classSumaFilaThread_a6a2181a1a49bd2ef1169e3467b670e9f}{get\-Resultado} ()
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classSumaFilaThread_aff2e595cc56767d6beecbecc84781651}{get\-Resultado} ()
 \begin{DoxyCompactList}\small\item\em Devuelve el resultado de la suma realizada en el método \hyperlink{classSumaFilaThread_ad8fa946cd44e708f69cd98b3ec4c824e}{run()} \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -32,30 +32,44 @@ Martín y Víctor.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classSumaFilaThread_a08b98e8d93693ed9f256529ab12af18f}{\index{Suma\-Fila\-Thread@{Suma\-Fila\-Thread}!Suma\-Fila\-Thread@{Suma\-Fila\-Thread}}
+\hypertarget{classSumaFilaThread_aad7a9f1cd3147750ba93322f6642743d}{\index{Suma\-Fila\-Thread@{Suma\-Fila\-Thread}!Suma\-Fila\-Thread@{Suma\-Fila\-Thread}}
 \index{Suma\-Fila\-Thread@{Suma\-Fila\-Thread}!SumaFilaThread@{Suma\-Fila\-Thread}}
 \subsubsection[{Suma\-Fila\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}Suma\-Fila\-Thread.\-Suma\-Fila\-Thread (
 \begin{DoxyParamCaption}
-\item[{int\mbox{[}$\,$\mbox{]}}]{fila1, }
-\item[{int\mbox{[}$\,$\mbox{]}}]{fila2}
+\item[{int}]{filas1\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{filas2\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{dimension}
 \end{DoxyParamCaption}
-)}}\label{classSumaFilaThread_a08b98e8d93693ed9f256529ab12af18f}
+)}}\label{classSumaFilaThread_aad7a9f1cd3147750ba93322f6642743d}
+
+
+Constructor con las filas de ambas matrices y la dimensión. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filas1} & Filas de la matriz1 \\
+\hline
+{\em filas2} & Filas de la matriz2 \\
+\hline
+{\em dimension} & Dimensión de las matrices \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classSumaFilaThread_a6a2181a1a49bd2ef1169e3467b670e9f}{\index{Suma\-Fila\-Thread@{Suma\-Fila\-Thread}!get\-Resultado@{get\-Resultado}}
+\hypertarget{classSumaFilaThread_aff2e595cc56767d6beecbecc84781651}{\index{Suma\-Fila\-Thread@{Suma\-Fila\-Thread}!get\-Resultado@{get\-Resultado}}
 \index{get\-Resultado@{get\-Resultado}!SumaFilaThread@{Suma\-Fila\-Thread}}
-\subsubsection[{get\-Resultado}]{\setlength{\rightskip}{0pt plus 5cm}int \mbox{[}$\,$\mbox{]} Suma\-Fila\-Thread.\-get\-Resultado (
+\subsubsection[{get\-Resultado}]{\setlength{\rightskip}{0pt plus 5cm}int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Suma\-Fila\-Thread.\-get\-Resultado (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classSumaFilaThread_a6a2181a1a49bd2ef1169e3467b670e9f}
+)}}\label{classSumaFilaThread_aff2e595cc56767d6beecbecc84781651}
 
 
 Devuelve el resultado de la suma realizada en el método \hyperlink{classSumaFilaThread_ad8fa946cd44e708f69cd98b3ec4c824e}{run()} 
 
 \begin{DoxyReturn}{Returns}
-La fila resultado 
+Las filas resultado 
 \end{DoxyReturn}
 \hypertarget{classSumaFilaThread_ad8fa946cd44e708f69cd98b3ec4c824e}{\index{Suma\-Fila\-Thread@{Suma\-Fila\-Thread}!run@{run}}
 \index{run@{run}!SumaFilaThread@{Suma\-Fila\-Thread}}
