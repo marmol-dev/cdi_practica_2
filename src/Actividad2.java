@@ -1,13 +1,19 @@
-import java.util.Vector;
-
+/**
+ * Clase principal que muestra el resultado de la actividad 2
+ * @author Víctor, Martín
+ */
 public class Actividad2 {
+	/**
+	 * Método principal.
+	 * @param args Los argumentos que recibe el programa del terminal
+     */
 	public static void main(String[] args) {
 		for (int i = 2; i <= 4096; i = i * 2) {
 			Matriz m1 = new	Matriz(i);
 			m1.autoGenerar();
 			Matriz m2 = new Matriz(i);
 			m2.autoGenerar();
-			SumaThread sumaThread;
+			SumaThreads sumaThreads;
 			Matriz resultado;
 
 			long inicio, fin;
@@ -15,7 +21,7 @@ public class Actividad2 {
 			//Con threads
 			inicio = System.currentTimeMillis();
 			try {
-				resultado = SumaThread.getInstance().getSuma(m1, m2);
+				resultado = SumaThreads.getInstance().getSuma(m1, m2);
 			} catch(Exception e){}
 			fin = System.currentTimeMillis();
 

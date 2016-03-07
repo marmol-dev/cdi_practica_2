@@ -1,0 +1,85 @@
+\hypertarget{classSumaThreads}{\section{Suma\-Threads Class Reference}
+\label{classSumaThreads}\index{Suma\-Threads@{Suma\-Threads}}
+}
+
+
+Clase que implementa la suma de dos matrices utilizando hilos.  
+
+
+Inheritance diagram for Suma\-Threads\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSumaThreads}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatriz}{Matriz} \hyperlink{classSumaThreads_ac799c145a2711fff3ac9b348c8afd881}{get\-Suma} (\hyperlink{classMatriz}{Matriz} m1, \hyperlink{classMatriz}{Matriz} m2)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Obtiene la matriz que es suma de dos matrices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classSumaThreads}{Suma\-Threads} \hyperlink{classSumaThreads_ad9b2e7b96e26eee35c767df5f7c11dec}{get\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la instancia para implementar el patrón \char`\"{}\-Singleton\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase que implementa la suma de dos matrices utilizando hilos. 
+
+\begin{DoxyAuthor}{Author}
+Víctor y Martín 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSumaThreads_ad9b2e7b96e26eee35c767df5f7c11dec}{\index{Suma\-Threads@{Suma\-Threads}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!SumaThreads@{Suma\-Threads}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Suma\-Threads} Suma\-Threads.\-get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classSumaThreads_ad9b2e7b96e26eee35c767df5f7c11dec}
+
+
+Devuelve la instancia para implementar el patrón \char`\"{}\-Singleton\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+La única instancia permitida de la \hyperlink{classSumaThreads}{Suma\-Threads} 
+\end{DoxyReturn}
+\hypertarget{classSumaThreads_ac799c145a2711fff3ac9b348c8afd881}{\index{Suma\-Threads@{Suma\-Threads}!get\-Suma@{get\-Suma}}
+\index{get\-Suma@{get\-Suma}!SumaThreads@{Suma\-Threads}}
+\subsubsection[{get\-Suma}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matriz} Suma\-Threads.\-get\-Suma (
+\begin{DoxyParamCaption}
+\item[{{\bf Matriz}}]{m1, }
+\item[{{\bf Matriz}}]{m2}
+\end{DoxyParamCaption}
+) throws Exception}}\label{classSumaThreads_ac799c145a2711fff3ac9b348c8afd881}
+
+
+Obtiene la matriz que es suma de dos matrices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m1} & La primera matriz \\
+\hline
+{\em m2} & La segunda matriz \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La matriz resultante 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & que puede lanzar si las matrices son de distinto tamaño \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceSumaMatrices_aaa4f45720c4f880570897a307d78c60d}{Suma\-Matrices}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{SumaThreads_8java}{Suma\-Threads.\-java}\end{DoxyCompactItemize}

@@ -1,18 +1,34 @@
 import java.util.Vector;
 
-public class SumaThread {
+/**
+ * Clase que implementa la suma de dos matrices utilizando hilos
+ * @author Víctor y Martín
+ */
+public class SumaThreads implements SumaMatrices {
 
-	private static SumaThread instance = null;
+	private static SumaThreads instance = null;
 
 	private Matriz m1;
 	private Matriz m2;
 	private Matriz resultado = null;
+	private int nThreads;
 
-	public static SumaThread getInstance() {
-		if(instance == null) instance = new SumaThread();
+	/**
+	 * Devuelve la instancia para implementar el patrón "Singleton"
+	 * @return La única instancia permitida de la SumaThreads
+     */
+	public static SumaThreads getInstance() {
+		if(instance == null) instance = new SumaThreads();
 		return instance;
 	}
 
+	/**
+	 * Obtiene la matriz que es suma de dos matrices
+	 * @param m1 La primera matriz
+	 * @param m2 La segunda matriz
+	 * @return La matriz resultante
+	 * @throws Exception que puede lanzar si las matrices son de distinto tamaño
+	 */
 	public Matriz getSuma(Matriz m1, Matriz m2) throws Exception {
 
 		if(m1.getTamano() != m2.getTamano()){
