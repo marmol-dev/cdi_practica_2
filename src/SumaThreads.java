@@ -15,11 +15,49 @@ public class SumaThreads implements SumaMatrices {
 
 	/**
 	 * Devuelve la instancia para implementar el patrón "Singleton"
+	 * @param nThreads el número de threads a usar
 	 * @return La única instancia permitida de la SumaThreads
      */
-	public static SumaThreads getInstance() {
-		if(instance == null) instance = new SumaThreads();
+	public static SumaThreads getInstance(int nThreads) throws Exception {
+		if(instance == null) instance = new SumaThreads(nThreads);
 		return instance;
+	}
+
+	public SumaThreads(int nThreads) throws Exception {
+		if (nThreads < 1){
+			throw new Exception("Invalid number of threads");
+		}
+		this.nThreads = nThreads;
+	}
+
+	private int getFilasPorThread(int dimension){
+		float filasPorThread = (float) (dimension / nThreads);
+
+		if (filasPorThread < 1) filasPorThread = 1;
+		else filasPorThread = (float) Math.floor(filasPorThread);
+
+		return (int) filasPorThread;
+	}
+
+	private int getFilaInicio(int nThread, int dimension){
+		int toret = nThread* getFilasPorThread(dimension);
+		if (toret >= dimension) toret = -1;
+		return toret;
+	}
+
+	private int getFilaFin(int nThread, int dimension){
+		int filaFin, filaInicio = getFilaInicio(nThread, dimension);
+
+		if (filaInicio == -1){
+			return -1;
+		}
+
+		filaFin = filaInicio + getFilasPorThread(dimension);
+		if (filaFin > dimension){
+			filaFin = dimension;
+		}
+
+		return filaFin;
 	}
 
 	/**
@@ -39,21 +77,32 @@ public class SumaThreads implements SumaMatrices {
 
 		Vector<SumaFilaThread> r = new Vector<SumaFilaThread>();
 		Vector<Thread> t = new Vector<Thread>();
+		int dimension = m1.getTamano();
+		int filaInicio, filaFin;
 
 
 		//Crear hilos e iniciarlos
-		for (int i = 0; i < m1.getTamano(); i++) {
-			r.add(new SumaFilaThread(m1.getFila(i), m2.getFila(i)));
-			t.add(new Thread(r.get(i)));
-			t.get(i).start();
+		for (int i = 0; i < nThreads; i++) {
+			filaInicio = getFilaInicio(i, dimension);
+			if (filaInicio > -1) {
+				filaFin = getFilaFin(i, dimension);
+				r.add(new SumaFilaThread(m1.getFilas(filaInicio, filaFin), m2.getFilas(filaInicio, filaFin), m1.getTamano()));
+				t.add(new Thread(r.get(i)));
+				t.get(i).start();
+			}
 		}
 
 		//Sincronizarlos
-		for(int i = 0; i < m1.getTamano(); i++){
-			try {
-				t.get(i).join();
-				resultado.setFila(i, r.get(i).getResultado());
-			} catch(InterruptedException e){}
+		for(int i = 0; i < nThreads; i++){
+			filaInicio = getFilaInicio(i, dimension);
+			if (filaInicio > -1) {
+				filaFin = getFilaFin(i, dimension);
+				try {
+					t.get(i).join();
+				} catch (InterruptedException e) {
+				}
+				resultado.setFilas(filaInicio, filaFin, r.get(i).getResultado());
+			}
 		}
 
 		return resultado;

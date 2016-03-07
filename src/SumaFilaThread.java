@@ -4,29 +4,33 @@
  * @author Martín y Víctor.
  */
 public class SumaFilaThread implements Runnable{
-    private int[] fila1;
-    private int[] fila2;
-    private int[] resultado = null;
-    public SumaFilaThread(int[] fila1, int[] fila2){
-        this.fila1 = fila1;
-        this.fila2 = fila2;
+    private int[][] filas1;
+    private int[][] filas2;
+    private int[][] resultado = null;
+    int dimension;
+    public SumaFilaThread(int[][] filas1, int[][] filas2, int dimension){
+        this.filas1 = filas1;
+        this.filas2 = filas2;
+        this.dimension = dimension;
     }
 
     /**
      * Realiza la suma de una fila de dos matrices y guarda el resultado
      */
     public void run() {
-        resultado = new int[fila1.length];
-        for (int i = 0; i < fila1.length; i++) {
-            resultado[i] = fila1[i] + fila2[i];
+        resultado = new int[filas1.length][dimension];
+        for (int i = 0; i < filas1.length; i++) {
+            for(int j = 0; j < filas1[i].length; j++){
+                resultado[i][j] = filas1[i][j] + filas2[i][j];
+            }
         }
     }
 
     /**
      * Devuelve el resultado de la suma realizada en el método run()
-     * @return La fila resultado
+     * @return Las filas resultado
      */
-    public int[] getResultado() {
+    public int[][] getResultado() {
         if (resultado == null) this.run();
         return this.resultado;
     }

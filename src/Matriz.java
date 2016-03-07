@@ -41,21 +41,23 @@ public class Matriz {
 	}
 
 	/**
-	 * Devuelve una fila
-	 * @param i La fila
-	 * @return Un vector de enteros que representa una fila
+	 * Devuelve un conjunto de filas de una matriz
+	 * @param i La fila de inicio
+	 * @param f La fila de fin
+	 * @return Un array con f - i filas y la dimensión de la matriz columnas
      */
-	public int[] getFila(int i){
-		return this.matriz[i];
+	public int[][] getFilas(int i, int f){
+		int[][] toret = new int[f-i][];
+		for(int j = i; j < f; j++){
+			toret[j - i] = this.matriz[j];
+		}
+		return toret;
 	}
 
-	/**
-	 * Actualiza el valor de una fila
-	 * @param i La fila
-	 * @param fila Un vector de enteros que representa una fila
-     */
-	public void setFila(int i, int[] fila){
-		this.matriz[i] = fila;
+	public void setFilas(int i, int f, int[][] filas){
+		for(int j = i; j < f; j++){
+			this.matriz[j] = filas[j - i];
+		}
 	}
 
 	/**
